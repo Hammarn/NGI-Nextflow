@@ -79,6 +79,7 @@ The STAR section of the MultiQC report shows a bar plot with alignment rates: go
 * `Sample_SJ.out.tab`
   * Filtered splice junctions detected in the mapping
 
+**N.B.** In order to save some space the STAR output is not saved by default. You get `.bam`-files from `markDuplicates`. In order to save the STAR output you can use the flag `--saveAlignedIntermediates`. 
 
 ## RSeQC
 RSeQC is a package of scripts designed to evaluate the quality of RNA seq data. You can find out more about the package at the [RSeQC website](http://rseqc.sourceforge.net/).

@@ -34,6 +34,9 @@ Samples that receive less than 5% alignment are skipped for further analysis. Yo
 ### Data organization
 The pipeline can't take a list of multiple input files - it takes a glob expression. If your fastq files are scattered in different paths then we recommend that you generate a directory with symlinked files. If running in paired end mode please make sure that your files are sensibly named so that they can be properly paired. See the previous point.
 
+### I can't see any .bam-files in the STAR/Hisat2 output
+In order to save some space the pipeline does not save `.bam` alignment files by default. You do get `.bam`-files from `markDuplicates` use these for further analysis. If you want to save the intermidate alignment output you can use the flag `--saveAlignedIntermediates`. 
+
 ## UPPMAX specific options
 
 ### Bioinfo-tools not loaded
